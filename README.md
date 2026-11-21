@@ -190,4 +190,4 @@ swift test
 
 ## License
 
-MIT License — see [LICENSE](LICENSE). Copyright © 2026 Ardiansyah (ANAK TERUBUK).
+MIT License — see [LICENSE](LICENSE). Copyright © 2026 by Anak Terubuk Dev 
