@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "platforms": {
+    "YouTube": ["youtube.com"],
+    "Instagram": ["instagram.com"],
+    "Facebook": ["facebook.com"],
+    "TikTok": ["tiktok.com"]
+  }
+}

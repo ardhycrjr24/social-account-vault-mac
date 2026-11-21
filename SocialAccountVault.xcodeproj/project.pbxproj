@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+
+		AA0000002800000000000000 /* SocialAccountVaultCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0000002800000000000000 /* SocialAccountVaultCore.framework */; };
+		AA0000002800000000000001 /* SocialAccountVaultCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0000002800000000000000 /* SocialAccountVaultCore.framework */; };
+		AA0000992800000000000099 /* SocialAccountVaultCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC0000002800000000000000 /* SocialAccountVaultCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA0000012800000000000001 /* SocialAccountVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000012800000000000001 /* SocialAccountVaultApp.swift */; };
+		AA0000022800000000000002 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000022800000000000002 /* NavigationItem.swift */; };
+		AA0000032800000000000003 /* PlatformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000032800000000000003 /* PlatformType.swift */; };
+		AA0000042800000000000004 /* AccountStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000042800000000000004 /* AccountStatus.swift */; };
+		AA0000052800000000000005 /* MonetizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000052800000000000005 /* MonetizationStatus.swift */; };
+		AA0000062800000000000006 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000062800000000000006 /* AccountType.swift */; };
+		AA0000072800000000000007 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000072800000000000007 /* Account.swift */; };
+		AA0000082800000000000008 /* PlatformCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000082800000000000008 /* PlatformCategory.swift */; };
+		AA0000092800000000000009 /* AccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000092800000000000009 /* AccountDetail.swift */; };
+		AA00000A280000000000000A /* ActivityLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000A280000000000000A /* ActivityLog.swift */; };
+		AA00000B280000000000000B /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000B280000000000000B /* SidebarView.swift */; };
+		AA00000C280000000000000C /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000C280000000000000C /* MainNavigationView.swift */; };
+		AA00000D280000000000000D /* DashboardPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000D280000000000000D /* DashboardPlaceholderView.swift */; };
+		AA00000E280000000000000E /* AccountsPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000E280000000000000E /* AccountsPlaceholderView.swift */; };
+		AA0000182800000000000018 /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000182800000000000018 /* AddAccountView.swift */; };
+		AA0000192800000000000019 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000192800000000000019 /* AccountDetailView.swift */; };
+		AA00000F280000000000000F /* ArchivePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000F280000000000000F /* ArchivePlaceholderView.swift */; };
+		AA0000102800000000000010 /* SettingsPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000102800000000000010 /* SettingsPlaceholderView.swift */; };
+		AA0000112800000000000011 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000112800000000000011 /* NavigationViewModel.swift */; };
+		AA0000122800000000000012 /* DatabaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000122800000000000012 /* DatabaseConfiguration.swift */; };
+		AA0000132800000000000013 /* CategorySeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000132800000000000013 /* CategorySeeder.swift */; };
+		AA0000142800000000000014 /* VaultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000162800000000000016 /* VaultError.swift */; };
+		AA0000152800000000000015 /* VaultDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000172800000000000017 /* VaultDataService.swift */; };
+		AA0000202800000000000020 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000202800000000000020 /* NavigationTests.swift */; };
+		AA0000212800000000000021 /* ModelFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000212800000000000021 /* ModelFoundationTests.swift */; };
+		AA0000222800000000000022 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000222800000000000022 /* PersistenceTests.swift */; };
+		AA0000232800000000000023 /* CategorySeederTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000232800000000000023 /* CategorySeederTests.swift */; };
+		AA0000242800000000000024 /* SecurityInvariantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000242800000000000024 /* SecurityInvariantTests.swift */; };
+		AA00005A280000000000005A /* DeviceOSType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00005B280000000000005B /* DeviceOSType.swift */; };
+		AA00005C280000000000005C /* MetadataCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00005D280000000000005D /* MetadataCategory.swift */; };
+		AA00005E280000000000005E /* StandardMetadataKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00005F280000000000005F /* StandardMetadataKey.swift */; };
+		AA0000602800000000000060 /* TwoFactorMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000612800000000000061 /* TwoFactorMethod.swift */; };
+		AA0000622800000000000062 /* TwoFactorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000632800000000000063 /* TwoFactorStatus.swift */; };
+		AA0000642800000000000064 /* AccountLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000652800000000000065 /* AccountLifecycle.swift */; };
+		AA0000662800000000000066 /* DomainRegistryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000672800000000000067 /* DomainRegistryLoader.swift */; };
+		AA0000682800000000000068 /* MetadataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000692800000000000069 /* MetadataValidator.swift */; };
+		AA00006A280000000000006A /* StorageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00006B280000000000006B /* StorageCoordinator.swift */; };
+		AA00006C280000000000006C /* URLSafetyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00006D280000000000006D /* URLSafetyValidator.swift */; };
+		AA00006E280000000000006E /* AccountDetailEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00006F280000000000006F /* AccountDetailEditorView.swift */; };
+		AA0000712800000000000071 /* SafeLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000722800000000000072 /* SafeLinkButton.swift */; };
+		AA0000732800000000000073 /* DetailEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000742800000000000074 /* DetailEditorTests.swift */; };
+		AA0000752800000000000075 /* DomainRegistryLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000762800000000000076 /* DomainRegistryLoaderTests.swift */; };
+		AA0000772800000000000077 /* DomainRegistryV1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000782800000000000078 /* DomainRegistryV1Tests.swift */; };
+		AA0000792800000000000079 /* FixtureGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00007A280000000000007A /* FixtureGenerator.swift */; };
+		AA00007B280000000000007B /* LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00007C280000000000007C /* LifecycleTests.swift */; };
+		AA00007D280000000000007D /* MetadataValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00007E280000000000007E /* MetadataValidationTests.swift */; };
+		AA00007F280000000000007F /* MigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000802800000000000080 /* MigrationTests.swift */; };
+		AA0000812800000000000081 /* PasswordRotationDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000822800000000000082 /* PasswordRotationDateTests.swift */; };
+		AA0000832800000000000083 /* PasswordRotationRetentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000842800000000000084 /* PasswordRotationRetentionTests.swift */; };
+		AA0000852800000000000085 /* ScannerHardeningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000862800000000000086 /* ScannerHardeningTests.swift */; };
+		AA0000872800000000000087 /* SettingsHonestyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000882800000000000088 /* SettingsHonestyTests.swift */; };
+		AA0000892800000000000089 /* StorageSafetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00008A280000000000008A /* StorageSafetyTests.swift */; };
+		AA00008B280000000000008B /* TwoFactorCombinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00008C280000000000008C /* TwoFactorCombinationTests.swift */; };
+		AA00008D280000000000008D /* URLSafetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00008E280000000000008E /* URLSafetyTests.swift */; };
+		AA0000902800000000000090 /* OfficialDomains.json in Resources */ = {isa = PBXBuildFile; fileRef = BB00008F280000000000008F /* OfficialDomains.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		KK0000002800000000000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000012800000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0000002800000000000000;
+			remoteInfo = SocialAccountVaultCore;
+		};
+		KK0000012800000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000012800000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0000012800000000000001;
+			remoteInfo = SocialAccountVault;
+		};
+		KK0000022800000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000012800000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0000002800000000000000;
+			remoteInfo = SocialAccountVaultCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE0000002800000000000000 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA0000992800000000000099 /* SocialAccountVaultCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+
+		CC0000002800000000000000 /* SocialAccountVaultCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocialAccountVaultCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000012800000000000001 /* SocialAccountVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAccountVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000022800000000000002 /* SocialAccountVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAccountVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0000012800000000000001 /* SocialAccountVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAccountVaultApp.swift; sourceTree = "<group>"; };
+		BB0000022800000000000002 /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		BB0000032800000000000003 /* PlatformType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformType.swift; sourceTree = "<group>"; };
+		BB0000042800000000000004 /* AccountStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatus.swift; sourceTree = "<group>"; };
+		BB0000052800000000000005 /* MonetizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetizationStatus.swift; sourceTree = "<group>"; };
+		BB0000062800000000000006 /* AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
+		BB0000072800000000000007 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		BB0000082800000000000008 /* PlatformCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformCategory.swift; sourceTree = "<group>"; };
+		BB0000092800000000000009 /* AccountDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetail.swift; sourceTree = "<group>"; };
+		BB00000A280000000000000A /* ActivityLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLog.swift; sourceTree = "<group>"; };
+		BB00000B280000000000000B /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		BB00000C280000000000000C /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		BB00000D280000000000000D /* DashboardPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPlaceholderView.swift; sourceTree = "<group>"; };
+		BB00000E280000000000000E /* AccountsPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPlaceholderView.swift; sourceTree = "<group>"; };
+		BB0000182800000000000018 /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
+		BB0000192800000000000019 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
+		BB00000F280000000000000F /* ArchivePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivePlaceholderView.swift; sourceTree = "<group>"; };
+		BB0000102800000000000010 /* SettingsPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPlaceholderView.swift; sourceTree = "<group>"; };
+		BB0000112800000000000011 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		BB0000122800000000000012 /* DatabaseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConfiguration.swift; sourceTree = "<group>"; };
+		BB0000132800000000000013 /* CategorySeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySeeder.swift; sourceTree = "<group>"; };
+		BB0000142800000000000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0000152800000000000015 /* SocialAccountVault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialAccountVault.entitlements; sourceTree = "<group>"; };
+		BB0000162800000000000016 /* VaultError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultError.swift; sourceTree = "<group>"; };
+		BB0000172800000000000017 /* VaultDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDataService.swift; sourceTree = "<group>"; };
+		BB0000202800000000000020 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
+		BB0000212800000000000021 /* ModelFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFoundationTests.swift; sourceTree = "<group>"; };
+		BB0000222800000000000022 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		BB0000232800000000000023 /* CategorySeederTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySeederTests.swift; sourceTree = "<group>"; };
+		BB0000242800000000000024 /* SecurityInvariantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityInvariantTests.swift; sourceTree = "<group>"; };
+		BB00005B280000000000005B /* DeviceOSType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOSType.swift; sourceTree = "<group>"; };
+		BB00005D280000000000005D /* MetadataCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataCategory.swift; sourceTree = "<group>"; };
+		BB00005F280000000000005F /* StandardMetadataKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardMetadataKey.swift; sourceTree = "<group>"; };
+		BB0000612800000000000061 /* TwoFactorMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFactorMethod.swift; sourceTree = "<group>"; };
+		BB0000632800000000000063 /* TwoFactorStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFactorStatus.swift; sourceTree = "<group>"; };
+		BB0000652800000000000065 /* AccountLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLifecycle.swift; sourceTree = "<group>"; };
+		BB0000672800000000000067 /* DomainRegistryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRegistryLoader.swift; sourceTree = "<group>"; };
+		BB0000692800000000000069 /* MetadataValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataValidator.swift; sourceTree = "<group>"; };
+		BB00006B280000000000006B /* StorageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCoordinator.swift; sourceTree = "<group>"; };
+		BB00006D280000000000006D /* URLSafetyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSafetyValidator.swift; sourceTree = "<group>"; };
+		BB00006F280000000000006F /* AccountDetailEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailEditorView.swift; sourceTree = "<group>"; };
+		BB0000722800000000000072 /* SafeLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeLinkButton.swift; sourceTree = "<group>"; };
+		BB0000742800000000000074 /* DetailEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditorTests.swift; sourceTree = "<group>"; };
+		BB0000762800000000000076 /* DomainRegistryLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRegistryLoaderTests.swift; sourceTree = "<group>"; };
+		BB0000782800000000000078 /* DomainRegistryV1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRegistryV1Tests.swift; sourceTree = "<group>"; };
+		BB00007A280000000000007A /* FixtureGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureGenerator.swift; sourceTree = "<group>"; };
+		BB00007C280000000000007C /* LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTests.swift; sourceTree = "<group>"; };
+		BB00007E280000000000007E /* MetadataValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataValidationTests.swift; sourceTree = "<group>"; };
+		BB0000802800000000000080 /* MigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationTests.swift; sourceTree = "<group>"; };
+		BB0000822800000000000082 /* PasswordRotationDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRotationDateTests.swift; sourceTree = "<group>"; };
+		BB0000842800000000000084 /* PasswordRotationRetentionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRotationRetentionTests.swift; sourceTree = "<group>"; };
+		BB0000862800000000000086 /* ScannerHardeningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerHardeningTests.swift; sourceTree = "<group>"; };
+		BB0000882800000000000088 /* SettingsHonestyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHonestyTests.swift; sourceTree = "<group>"; };
+		BB00008A280000000000008A /* StorageSafetyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSafetyTests.swift; sourceTree = "<group>"; };
+		BB00008C280000000000008C /* TwoFactorCombinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFactorCombinationTests.swift; sourceTree = "<group>"; };
+		BB00008E280000000000008E /* URLSafetyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSafetyTests.swift; sourceTree = "<group>"; };
+		BB00008F280000000000008F /* OfficialDomains.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OfficialDomains.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0000002800000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0000012800000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000002800000000000000 /* SocialAccountVaultCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0000022800000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000002800000000000001 /* SocialAccountVaultCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+
+		EE0000012800000000000001 = {
+			isa = PBXGroup;
+			children = (
+				EE0000022800000000000002 /* Sources */,
+				EE0000032800000000000003 /* Tests */,
+				EE0000042800000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0000022800000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EE0000052800000000000005 /* SocialAccountVaultApp */,
+				EE0000062800000000000006 /* SocialAccountVaultCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EE0000052800000000000005 /* SocialAccountVaultApp */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000012800000000000001 /* SocialAccountVaultApp.swift */,
+			);
+			path = SocialAccountVaultApp;
+			sourceTree = "<group>";
+		};
+		EE0000062800000000000006 /* SocialAccountVaultCore */ = {
+			isa = PBXGroup;
+			children = (
+				EE0000072800000000000007 /* Models */,
+				EE0000082800000000000008 /* Views */,
+				EE0000092800000000000009 /* ViewModels */,
+				EE00000A280000000000000A /* Services */,
+				EE00000B280000000000000B /* Resources */,
+			);
+			path = SocialAccountVaultCore;
+			sourceTree = "<group>";
+		};
+		EE0000072800000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE00000C280000000000000C /* Enums */,
+				BB0000162800000000000016 /* VaultError.swift */,
+				BB0000072800000000000007 /* Account.swift */,
+				BB0000082800000000000008 /* PlatformCategory.swift */,
+				BB0000092800000000000009 /* AccountDetail.swift */,
+				BB00000A280000000000000A /* ActivityLog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE00000C280000000000000C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000022800000000000002 /* NavigationItem.swift */,
+				BB0000032800000000000003 /* PlatformType.swift */,
+				BB0000042800000000000004 /* AccountStatus.swift */,
+				BB0000052800000000000005 /* MonetizationStatus.swift */,
+				BB0000062800000000000006 /* AccountType.swift */,
+				BB00005B280000000000005B /* DeviceOSType.swift */,
+				BB00005D280000000000005D /* MetadataCategory.swift */,
+				BB00005F280000000000005F /* StandardMetadataKey.swift */,
+				BB0000612800000000000061 /* TwoFactorMethod.swift */,
+				BB0000632800000000000063 /* TwoFactorStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EE0000082800000000000008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE00000D280000000000000D /* Navigation */,
+				EE00000E280000000000000E /* Dashboard */,
+				EE00000F280000000000000F /* Accounts */,
+				EE0000102800000000000010 /* Archive */,
+				EE0000112800000000000011 /* Settings */,
+				EE0000702800000000000070 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE00000D280000000000000D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000B280000000000000B /* SidebarView.swift */,
+				BB00000C280000000000000C /* MainNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EE00000E280000000000000E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000D280000000000000D /* DashboardPlaceholderView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		EE00000F280000000000000F /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000E280000000000000E /* AccountsPlaceholderView.swift */,
+				BB0000182800000000000018 /* AddAccountView.swift */,
+				BB0000192800000000000019 /* AccountDetailView.swift */,
+				BB00006F280000000000006F /* AccountDetailEditorView.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		EE0000102800000000000010 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000F280000000000000F /* ArchivePlaceholderView.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		EE0000112800000000000011 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000102800000000000010 /* SettingsPlaceholderView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EE0000092800000000000009 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000112800000000000011 /* NavigationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EE00000A280000000000000A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE0000122800000000000012 /* Data */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EE0000122800000000000012 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000122800000000000012 /* DatabaseConfiguration.swift */,
+				BB0000132800000000000013 /* CategorySeeder.swift */,
+				BB0000172800000000000017 /* VaultDataService.swift */,
+				BB0000652800000000000065 /* AccountLifecycle.swift */,
+				BB0000672800000000000067 /* DomainRegistryLoader.swift */,
+				BB0000692800000000000069 /* MetadataValidator.swift */,
+				BB00006B280000000000006B /* StorageCoordinator.swift */,
+				BB00006D280000000000006D /* URLSafetyValidator.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE00000B280000000000000B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000142800000000000014 /* Info.plist */,
+				BB0000152800000000000015 /* SocialAccountVault.entitlements */,
+				BB00008F280000000000008F /* OfficialDomains.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE0000032800000000000003 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000202800000000000020 /* NavigationTests.swift */,
+				BB0000212800000000000021 /* ModelFoundationTests.swift */,
+				BB0000222800000000000022 /* PersistenceTests.swift */,
+				BB0000232800000000000023 /* CategorySeederTests.swift */,
+				BB0000242800000000000024 /* SecurityInvariantTests.swift */,
+				BB0000742800000000000074 /* DetailEditorTests.swift */,
+				BB0000762800000000000076 /* DomainRegistryLoaderTests.swift */,
+				BB0000782800000000000078 /* DomainRegistryV1Tests.swift */,
+				BB00007A280000000000007A /* FixtureGenerator.swift */,
+				BB00007C280000000000007C /* LifecycleTests.swift */,
+				BB00007E280000000000007E /* MetadataValidationTests.swift */,
+				BB0000802800000000000080 /* MigrationTests.swift */,
+				BB0000822800000000000082 /* PasswordRotationDateTests.swift */,
+				BB0000842800000000000084 /* PasswordRotationRetentionTests.swift */,
+				BB0000862800000000000086 /* ScannerHardeningTests.swift */,
+				BB0000882800000000000088 /* SettingsHonestyTests.swift */,
+				BB00008A280000000000008A /* StorageSafetyTests.swift */,
+				BB00008C280000000000008C /* TwoFactorCombinationTests.swift */,
+				BB00008E280000000000008E /* URLSafetyTests.swift */,
+			);
+			path = Tests/SocialAccountVaultTests;
+			sourceTree = "<group>";
+		};
+		EE0000042800000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000002800000000000000 /* SocialAccountVaultCore.framework */,
+				CC0000012800000000000001 /* SocialAccountVault.app */,
+				CC0000022800000000000002 /* SocialAccountVaultTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0000702800000000000070 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000722800000000000072 /* SafeLinkButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF0000002800000000000000 /* SocialAccountVaultCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = GG0000002800000000000001 /* Build configuration list for PBXNativeTarget "SocialAccountVaultCore" */;
+			buildPhases = (
+				HH0000002800000000000000 /* Sources */,
+				DD0000002800000000000000 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialAccountVaultCore;
+			productName = SocialAccountVaultCore;
+			productReference = CC0000002800000000000000 /* SocialAccountVaultCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF0000012800000000000001 /* SocialAccountVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = GG0000012800000000000001 /* Build configuration list for PBXNativeTarget "SocialAccountVault" */;
+			buildPhases = (
+				HH0000012800000000000001 /* Sources */,
+				DD0000012800000000000001 /* Frameworks */,
+				EE0000002800000000000000 /* Embed Frameworks */,
+				II0000012800000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				JJ0000002800000000000000 /* PBXTargetDependency */,
+			);
+			name = SocialAccountVault;
+			productName = SocialAccountVault;
+			productReference = CC0000012800000000000001 /* SocialAccountVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF0000022800000000000002 /* SocialAccountVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = GG0000022800000000000002 /* Build configuration list for PBXNativeTarget "SocialAccountVaultTests" */;
+			buildPhases = (
+				HH0000022800000000000002 /* Sources */,
+				DD0000022800000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				JJ0000012800000000000001 /* PBXTargetDependency */,
+				JJ0000022800000000000002 /* PBXTargetDependency */,
+			);
+			name = SocialAccountVaultTests;
+			productName = SocialAccountVaultTests;
+			productReference = CC0000022800000000000002 /* SocialAccountVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000012800000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FF0000002800000000000000 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					FF0000012800000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					FF0000022800000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = FF0000012800000000000001;
+					};
+				};
+			};
+			buildConfigurationList = GG0000002800000000000000 /* Build configuration list for PBXProject "SocialAccountVault" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE0000012800000000000001;
+			productRefGroup = EE0000042800000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF0000002800000000000000 /* SocialAccountVaultCore */,
+				FF0000012800000000000001 /* SocialAccountVault */,
+				FF0000022800000000000002 /* SocialAccountVaultTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+
+		II0000012800000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000902800000000000090 /* OfficialDomains.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+
+		HH0000002800000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000022800000000000002 /* NavigationItem.swift in Sources */,
+				AA0000032800000000000003 /* PlatformType.swift in Sources */,
+				AA0000042800000000000004 /* AccountStatus.swift in Sources */,
+				AA0000052800000000000005 /* MonetizationStatus.swift in Sources */,
+				AA0000062800000000000006 /* AccountType.swift in Sources */,
+				AA0000072800000000000007 /* Account.swift in Sources */,
+				AA0000082800000000000008 /* PlatformCategory.swift in Sources */,
+				AA0000092800000000000009 /* AccountDetail.swift in Sources */,
+				AA00000A280000000000000A /* ActivityLog.swift in Sources */,
+				AA00000B280000000000000B /* SidebarView.swift in Sources */,
+				AA00000C280000000000000C /* MainNavigationView.swift in Sources */,
+				AA00000D280000000000000D /* DashboardPlaceholderView.swift in Sources */,
+				AA00000E280000000000000E /* AccountsPlaceholderView.swift in Sources */,
+				AA0000182800000000000018 /* AddAccountView.swift in Sources */,
+				AA0000192800000000000019 /* AccountDetailView.swift in Sources */,
+				AA00000F280000000000000F /* ArchivePlaceholderView.swift in Sources */,
+				AA0000102800000000000010 /* SettingsPlaceholderView.swift in Sources */,
+				AA0000112800000000000011 /* NavigationViewModel.swift in Sources */,
+				AA0000122800000000000012 /* DatabaseConfiguration.swift in Sources */,
+				AA0000132800000000000013 /* CategorySeeder.swift in Sources */,
+				AA0000142800000000000014 /* VaultError.swift in Sources */,
+				AA0000152800000000000015 /* VaultDataService.swift in Sources */,
+				AA00005A280000000000005A /* DeviceOSType.swift in Sources */,
+				AA00005C280000000000005C /* MetadataCategory.swift in Sources */,
+				AA00005E280000000000005E /* StandardMetadataKey.swift in Sources */,
+				AA0000602800000000000060 /* TwoFactorMethod.swift in Sources */,
+				AA0000622800000000000062 /* TwoFactorStatus.swift in Sources */,
+				AA0000642800000000000064 /* AccountLifecycle.swift in Sources */,
+				AA0000662800000000000066 /* DomainRegistryLoader.swift in Sources */,
+				AA0000682800000000000068 /* MetadataValidator.swift in Sources */,
+				AA00006A280000000000006A /* StorageCoordinator.swift in Sources */,
+				AA00006C280000000000006C /* URLSafetyValidator.swift in Sources */,
+				AA00006E280000000000006E /* AccountDetailEditorView.swift in Sources */,
+				AA0000712800000000000071 /* SafeLinkButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		HH0000012800000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000012800000000000001 /* SocialAccountVaultApp.swift in Sources */,
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		HH0000022800000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000202800000000000020 /* NavigationTests.swift in Sources */,
+				AA0000212800000000000021 /* ModelFoundationTests.swift in Sources */,
+				AA0000222800000000000022 /* PersistenceTests.swift in Sources */,
+				AA0000232800000000000023 /* CategorySeederTests.swift in Sources */,
+				AA0000242800000000000024 /* SecurityInvariantTests.swift in Sources */,
+				AA0000732800000000000073 /* DetailEditorTests.swift in Sources */,
+				AA0000752800000000000075 /* DomainRegistryLoaderTests.swift in Sources */,
+				AA0000772800000000000077 /* DomainRegistryV1Tests.swift in Sources */,
+				AA0000792800000000000079 /* FixtureGenerator.swift in Sources */,
+				AA00007B280000000000007B /* LifecycleTests.swift in Sources */,
+				AA00007D280000000000007D /* MetadataValidationTests.swift in Sources */,
+				AA00007F280000000000007F /* MigrationTests.swift in Sources */,
+				AA0000812800000000000081 /* PasswordRotationDateTests.swift in Sources */,
+				AA0000832800000000000083 /* PasswordRotationRetentionTests.swift in Sources */,
+				AA0000852800000000000085 /* ScannerHardeningTests.swift in Sources */,
+				AA0000872800000000000087 /* SettingsHonestyTests.swift in Sources */,
+				AA0000892800000000000089 /* StorageSafetyTests.swift in Sources */,
+				AA00008B280000000000008B /* TwoFactorCombinationTests.swift in Sources */,
+				AA00008D280000000000008D /* URLSafetyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		JJ0000002800000000000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF0000002800000000000000 /* SocialAccountVaultCore */;
+			targetProxy = KK0000002800000000000000 /* PBXContainerItemProxy */;
+		};
+		JJ0000012800000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF0000012800000000000001 /* SocialAccountVault */;
+			targetProxy = KK0000012800000000000001 /* PBXContainerItemProxy */;
+		};
+		JJ0000022800000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF0000002800000000000000 /* SocialAccountVaultCore */;
+			targetProxy = KK0000022800000000000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		LL0000002800000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		LL0000002800000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		LL0000002800000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Sources/SocialAccountVaultCore/Resources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.anakterubuk.SocialAccountVaultCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		LL0000002800000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Sources/SocialAccountVaultCore/Resources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.anakterubuk.SocialAccountVaultCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		LL0000012800000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sources/SocialAccountVaultCore/Resources/SocialAccountVault.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.anakterubuk.SocialAccountVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		LL0000012800000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sources/SocialAccountVaultCore/Resources/SocialAccountVault.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.anakterubuk.SocialAccountVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		LL0000022800000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.anakterubuk.SocialAccountVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialAccountVault.app/Contents/MacOS/SocialAccountVault";
+			};
+			name = Debug;
+		};
+		LL0000022800000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.anakterubuk.SocialAccountVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialAccountVault.app/Contents/MacOS/SocialAccountVault";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		GG0000002800000000000000 /* Build configuration list for PBXProject "SocialAccountVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				LL0000002800000000000001 /* Debug */,
+				LL0000002800000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		GG0000002800000000000001 /* Build configuration list for PBXNativeTarget "SocialAccountVaultCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				LL0000002800000000000011 /* Debug */,
+				LL0000002800000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		GG0000012800000000000001 /* Build configuration list for PBXNativeTarget "SocialAccountVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				LL0000012800000000000003 /* Debug */,
+				LL0000012800000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		GG0000022800000000000002 /* Build configuration list for PBXNativeTarget "SocialAccountVaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				LL0000022800000000000005 /* Debug */,
+				LL0000022800000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 000000012800000000000001 /* Project object */;
+}
