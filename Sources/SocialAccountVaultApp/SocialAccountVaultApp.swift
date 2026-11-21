@@ -67,7 +67,7 @@ struct SocialAccountVaultApp: App {
                 // NSWorkspace.shared.open yang langsung dari string.
                 Button("Social Account Vault Help") {
                     helpURL = URLSafetyValidator().classify(
-                        "https://github.com/ardhycrjr24/SocialAccountVault"
+                        "https://github.com/ardhycrjr24/social-account-vault-mac"
                     )
                 }
                 .confirmationDialog(
